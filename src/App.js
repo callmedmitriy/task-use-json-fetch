@@ -1,25 +1,16 @@
 import React from 'react';
 
-import useJsonFetch from './hooks/useJsonFetch'
+import DataComponent from './components/DataComponent'
+import LoadingComponent from './components/LoadingComponent'
+import ErrorComponent from './components/ErrorComponent'
 
 function App() {
 
-  /*const url = "http://localhost:7070/data"*/
-  /*const url = "http://localhost:7070/error"*/
-  const url = "http://localhost:7070/loading"
-  const opts = {
-    method: 'GET'
-  }
-
-  const [data, loading, error] = useJsonFetch(url, opts);
-
-  console.log(data)
-  console.log(loading)
-  console.log(error)
-
   return (
     <div>
-      TEST
+      <DataComponent/>
+      <LoadingComponent/>
+      <ErrorComponent/>
     </div>
   );
 }
