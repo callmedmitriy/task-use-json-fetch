@@ -14,9 +14,7 @@ export default function DataComponent() {
   return (
     <div>
       <h1>Data component</h1>
-      {loading && 'Загрузка'}
       {data && data.status}
-      {error && error.status}
     </div>
   )
 }

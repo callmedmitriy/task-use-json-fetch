@@ -14,8 +14,6 @@ export default function ErrorComponent() {
   return (
     <div>
       <h1>Error component</h1>
-      {loading && 'Загрузка'}
-      {data && data.status}
       {error && error.status}
     </div>
   )

@@ -15,8 +15,6 @@ export default function LoadingComponent() {
     <div>
       <h1>Loading component</h1>
       {loading && 'Загрузка'}
-      {data && data.status}
-      {error && error.status}
     </div>
   )
 } 
